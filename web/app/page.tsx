@@ -23,7 +23,7 @@ export default function Home() {
       <Navbar />
 
       {/* Contenu principal */}
-      <Box component="main" sx={{ flex: 1, pt: { xs: '64px', sm: '70px' } }}>
+      <Box component="main" sx={{ flex: 1, pt: { xs: '14px', sm: '0px' } }}>
         {/* Section Hero */}
         <Hero />
 

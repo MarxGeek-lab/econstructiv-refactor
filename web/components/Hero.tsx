@@ -90,7 +90,7 @@ const Hero = () => {
               <Typography
                 variant="h5"
                 color="text.secondary"
-                sx={{ mb: 4, lineHeight: 1.8, fontWeight: 400 }}
+                sx={{ mb: 4, lineHeight: 1.8, fontWeight: 400, fontSize: '16px' }}
               >
                 Trouvez un professionnel qualifié pour vos travaux de plomberie,
                 électricité, climatisation, peinture et plus encore — en un clic. 🇧🇯
@@ -118,6 +118,7 @@ const Hero = () => {
                     sx={{ 
                       px: 4, 
                       py: 1.5,
+                      whiteSpace: 'nowrap',
                       boxShadow: '0 8px 24px rgba(13, 71, 161, 0.3)',
                       '&:hover': {
                         boxShadow: '0 12px 32px rgba(13, 71, 161, 0.4)',
@@ -135,7 +136,7 @@ const Hero = () => {
                     startIcon={<AppleIcon />}
                     href="https://apps.apple.com"
                     target="_blank"
-                    sx={{ px: 4, py: 1.5, borderWidth: 2 }}
+                    sx={{ whiteSpace: 'nowrap', px: 4, py: 1.5, borderWidth: 2 }}
                   >
                     Télécharger sur App Store
                   </Button>
@@ -155,7 +156,7 @@ const Hero = () => {
           </Box>
 
           {/* Image illustration */}
-          <Box sx={{ flex: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
+          <Box sx={{ flex: 1, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
